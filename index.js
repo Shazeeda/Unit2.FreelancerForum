@@ -30,23 +30,36 @@ function init() {
   /**
    * 👉 STEP 5:
    *    Call the function you created in step 4
+   * 
    */
 }
 
 /**
  * 👉 STEP 4:
- *    Create a function to render the pets in our pets array
+ *    Create a function to render the names in our name array
+ * 
  */
+function renderNames() {
+  const namesDiv = document.getElementById('names')
+}
+const nameItem = document.createElement('div');
+nameItem.classList.add('name-item');
+renderFreeLancer();
 
 /**
  * 👉 STEP 6:
- *    Create a function to add a new pet to the pets array
+ *    Create a function to add a new Freelander the Freelancer array
  */
+function addFreelancer(name, occupation, starting price)
 
 /**
  * 👉 STEP 7:
- *    Add an interval to add a new pet every second
+ *    Add an interval to add a new FreeLancer every second
+ * 
  */
-
+function addFreelancerInterval()
+let indec = freelances.length + 1;
+const {name, occupation, starting price} = generateFreelancerData(index);
+addFreelancer{name, occupation, starting price};
 //call init function
 init();
