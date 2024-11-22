@@ -32,6 +32,8 @@ root.appendChild(table);
    * 👉 STEP 5:
    *    Call the function you created in step 4
    * 
+   * 
+   * 
    */
 }
 
@@ -42,29 +44,53 @@ root.appendChild(table);
  */
 function freeRender(){
   const tbody = document.createElement("tbody");
+  table.appendChild(tablee);
+
+  const tbody = document.createElement("tbody");
   table.appendChild(tbody);
 
-
-// hold freelancers
-  const freeRow = doucment.createElement("tr");
-
-  // textcontent goes here
-  const freelancers = documnt.createElement("td");
-
-// this is name, occupation, price
   const nameColumn1 = document.createElement("th");
   nameColumn1.textContent = "Name";
   tbody.appendChild(nameColumn1);
 
-
   const jobColumn2 = document.createElement("th");
-jobColumn2.textContent = "Occupation";
-tbody.appendChild(jobColumn2);
-
+  jobColumn2.textContent = "Occupation";
+  tbody.appendChild(jobColumn2);
 
   const priceColumn3 = document.createElement("th");
-  priceColumn3.textContent = "Price"; 
+  priceColumn3.textContent = "Starting Price"; 
   tbody.appendChild(priceColumn3);
+
+  const freeRow = doucment.createElement("td");
+
+
+freelancers.array.forEach(person) => {
+  const freeRow = document.createElement("tr");
+  tbody.appendChild(freeRow);
+
+  const nameCell = doocument.createElement("td");
+  nameCell.textContent = person.name;
+  freeRow.appendChild(nameCell);
+
+  const jobCell = document.createElement("td");
+  jobCell.textContent = person.name;
+  freeRow.appendChild(jobCell);
+
+  const priceCell = document.createElement("td");
+  priceCell.textContent = person.price;
+  freeRow.appendChild(priceCell);
+
+  tbody.appendChild(freeRow);
+}
+
+
+// this is name, occupation, price
+
+
+
+
+
+
 
 
 }
@@ -74,7 +100,12 @@ tbody.appendChild(jobColumn2);
  *    Create a function to add a new Freelander the Freelancer array
  */
 function addNewFreelancer(freelancers){
-  
+  const addPrice = Math.floor(Math,random() * 100);
+  const addName = [Math.floor(Math.random() = name.length)];
+  const addJob = occupation[Math.floor(Math.random() * occupation.length)];
+  freelancers.push({name: addName,occupation: addJob, price: addPrice});
+
+  freeRender();
 }
 
 /**
