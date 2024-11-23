@@ -25,16 +25,22 @@ function init() {
    */
 
 const table = document.createElement("table");
-root.appendChild(table);
+const headerRow = document.createElement("tr");
+["Name, Occupation", "Pricee"].forEach((header) => {
+  const th = document.createElement("th");
+  th.innerText = header;
+headerRow.appendChild(th);
+})
+table.appendChild(headerRow);
 
+root.appendChild(table);
 
   /**
    * 👉 STEP 5:
    *    Call the function you created in step 4
    * 
-   * 
-   * 
    */
+  freeLancer.push({name, price, occupation});
 }
 
 /**
@@ -85,13 +91,6 @@ freelancers.array.forEach(person) => {
 
 
 // this is name, occupation, price
-
-
-
-
-
-
-
 
 }
 
